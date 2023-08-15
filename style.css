@@ -169,7 +169,7 @@ body{
     transform: translateY(-13.5px);
 }
 .header__menu::after{
-    transform: translateY(-20px);
+    transform: translateY(-20.6px);
 }
 .header__nav{
     text-align: center;
