@@ -17,7 +17,7 @@ img{
 :root{
     /* BORDERS */
     --BORDER:2PX sOLID RED;
-    --GREY-BORDER:1px solid grey;
+    --GREY-BORDER:0.5px solid grey;
      /* PADDINGS */
     --BUTTON-PADDING:0.75em;
     /* FONT SIZES */
