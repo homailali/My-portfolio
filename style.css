@@ -17,7 +17,7 @@ img{
 :root{
     /* BORDERS */
     --BORDER:2PX sOLID RED;
-    --GREY-BORDER:0.5px solid grey;
+    --GREY-BORDER:0px solid grey;
      /* PADDINGS */
     --BUTTON-PADDING:0.75em;
     /* FONT SIZES */
@@ -43,8 +43,9 @@ img{
     --H4-COLOR:#2294ed;
     --LINKS-COLOR:#183b56;
     --NAV-BGCOLOR:white;
+    --IMAGE-BGCOLOR:#dcdbdb;
     /* MARGINS */
-    --TOP-AND-BOTTOM-MARGINS-FORCONTAINERS:3rem 0rem;
+    --TOP-AND-BOTTOM-MARGINS-FORCONTAINERS:3rem 0rem 5rem 0rem;
     --THE-ONE-LARGE-MARGIN:0rem 1rem;
     --TOP-AND-BOTTOM-MARGINS-FOR-PARAGRAPHS-HEADING-ETC:0.7rem 0rem;
     --TOP-AND-BOTTOM-MARGINS-FOR-BUTTONS:1.2rem 0rem;
@@ -72,9 +73,14 @@ h1{
 }
 h2{
     font-size: var(--H2-FONTSIZE);
+    margin: var(--TOP-AND-BOTTOM-MARGINS-FOR-PARAGRAPHS-HEADING-ETC);
+}
+h3{
+    font-size: var(--H3-FONTSIZE);
+    margin: var(--TOP-AND-BOTTOM-MARGINS-FOR-PARAGRAPHS-HEADING-ETC);
 }
 h4{
-    font-size: var(--H3-FONTSIZE);
+    font-size: var(--H4-FONTSIZE);
 }
 p{
   color: var(--PARAGRAPH-COLORS);
@@ -92,8 +98,11 @@ p{
     border-radius: 5px;
     cursor: pointer;
 }
-li{
+li,ul,pre{
     list-style-type: none;
+    font-family: var(--P-FONTFAMILY);
+    font-size: var(--P-FS);
+    color: var(--PARAGRAPH-COLORS);
 }
 a{
     text-decoration: none;
@@ -116,6 +125,13 @@ html{
 body{
    min-height: 1500vh;
 } 
+
+
+
+
+
+
+
 
 
 /* || HEADER */
@@ -166,7 +182,7 @@ body{
 }
 .header__menu::before{
  
-    transform: translateY(-13.5px);
+    transform: translateY(-13px);
 }
 .header__menu::after{
     transform: translateY(-20.6px);
@@ -240,7 +256,7 @@ body{
 /* || SECOND NAV */
 
 .header__section2{
-      margin: var(--THE-ONE-LARGE-MARGIN);
+    margin: var(--THE-ONE-LARGE-MARGIN);
     padding: var(--TOP-AND-BOTTOM-PADDING-FOR-THE-HEADER);
     display: flex;
     align-items: center;
@@ -253,6 +269,111 @@ body{
 .header__section2{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* || MAIN */
+.main{
+    margin: var(--THE-ONE-LARGE-MARGIN);
+}
+/* || ARTICLE1 */
+.main__article1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: var(--TOP-AND-BOTTOM-MARGINS-FORCONTAINERS);
+}
+/* || ARTICLE2 */
+.main__article2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    gap: 1rem;
+    margin: var(--TOP-AND-BOTTOM-MARGINS-FORCONTAINERS);
+}
+
+.article2__image{
+    background-color: var(--IMAGE-BGCOLOR);
+}
+.article2__ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.article2__h4{
+    color: var(--H4-COLOR);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* || TABLETS MEDIA QUERY */
+@media (min-width:760px){
+    /* ARTICLE-1 */
+    .main__article1{
+        flex-direction: row;
+    }
+    /* ARTICLE-2 */
+    .main__article2{
+        flex-direction: row;
+    }
+    .article2__textarea{
+        order: 2;
+        width: 50%;   
+    }
+    .article2__image{
+       
+        width: 50%;
+        text-align: center;
+    }
+    /* Header */
+    .header{
+        display: none;
+    }
+    .header__section2{
+        display: flex;
+    }
+}
+/* || LARGEST SCREENS MEDIA QUERY */
+@media (min-width:1400px){
+    body{
+        width: 1300px;
+        margin: 0rem auto;
+        border: var(--BORDER);
+    }
+}
+
+
+
+
+
 
 
 
@@ -284,77 +405,3 @@ body{
 
 
 
-
-
-
-
-
-
-/* || MAIN */
-.main{
-    margin: var(--THE-ONE-LARGE-MARGIN);
-}
-/* || ARTICLE1 */
-.main__article1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    margin: var(--TOP-AND-BOTTOM-MARGINS-FORCONTAINERS);
-}
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* || TABLETS MEDIA QUERY */
-@media (min-width:760px){
-    /* ARTICLE-1 */
-    .main__article1{
-        flex-direction: row;
-    }
-    /* Header */
-    .header{
-        display: none;
-    }
-    .header__section2{
-        display: flex;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-/* || LARGEST SCREENS MEDIA QUERY */
-@media (min-width:1400px){
-    body{
-        width: 1300px;
-        margin: 0rem auto;
-        border: var(--BORDER);
-    }
-}
