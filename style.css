@@ -15,6 +15,8 @@ img{
 }
 /* || ROOT AKA CUSTOM PROPERTIES */
 :root{
+    /* BORDER-RADIUS */
+    --THE-ONE-BORDER-RADIUS:5px;
     /* BORDERS */
     --BORDER:2PX sOLID RED;
     --GREY-BORDER:0px solid grey;
@@ -49,7 +51,7 @@ img{
     --IMAGE-BGCOLOR:#dcdbdb;
     --ACTUAL-PROGRESS_BGCOLOR:rgb(210, 208, 208);
     /* MARGINS */
-    --LI-MOBILE-LAST-CHILD-MARGIN:0rem 0.5rem 0.5rem 0.5rem;
+    --LI-MOBILE-LAST-CHILD-MARGIN:0rem 0.5rem 0rem 0.5rem;
     --article3--textarea-MARGIN-TOP:1rem;
     --PROGRESS-MARGIN-TOP:0.7rem;
     --TOP-AND-BOTTOM-MARGINS-FORCONTAINERS:2rem 0rem 5rem 0rem;
@@ -112,7 +114,7 @@ p{
     background-color: var(--BUTTON-COLORS);
     border: none;
     color:var(--WHITECOLOR);
-    border-radius: 5px;
+    border-radius: var(--THE-ONE-BORDER-RADIUS);
     cursor: pointer;
 }
 li,ul,pre{
@@ -179,6 +181,7 @@ body{
     width:25px;
     height: 20px;
     text-align: center;
+ 
 }
 .header__menu__button:hover{
     background: none;
@@ -189,7 +192,7 @@ body{
     width: 20px;
     height: 3px;
     background-color: var(--H4-COLOR);
-     
+    border-radius: 5px;
 }
 .header__menu::before,
 .header__menu::after{
@@ -224,7 +227,7 @@ body{
     font-weight: bold;
     background-color: var(--EMAIL-BG-COLOR);
     margin: var(--LI-MOBILE-LAST-CHILD-MARGIN);
-    border-radius: 5px;
+    border-radius: var(--THE-ONE-BORDER-RADIUS);
 }
 .header__li:last-child a{
    color: var(--WHITECOLOR);
@@ -375,7 +378,7 @@ body{
 }
 .actual__progress{
     height: 10px;
-    border-radius: 5px;
+    border-radius: var(--THE-ONE-BORDER-RADIUS);
     background-color: var(--ACTUAL-PROGRESS_BGCOLOR);
 }
 .article3__progress h6{
@@ -383,12 +386,12 @@ body{
 }
 .actual__progress::before{
     position: relative;
-    top: -4.6px;
+    top: -4.4px;
     display: inline-block;
     content: '';
     height: 10px;
     background-color: var(--H4-COLOR);
-    border-radius: 5px;
+    border-radius: var(--THE-ONE-BORDER-RADIUS);
  
 }
 .html__progress::before{
@@ -424,16 +427,15 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-     
     background-color: #141c3a;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     transform: translateY(-100%);
-    transition: all 0.8s ease 0s;
+    transition: all 0.7s ease 0s;
     text-align: center;
-    padding:0rem 0.5rem;
+    padding:0rem 1rem;
 }
 .article4__image__details__h4{
     color: var(--WHITECOLOR);
@@ -448,7 +450,7 @@ body{
     border:2px solid var(--BUTTON-COLORS);
     background: none;
     color:var(--WHITECOLOR);
-    border-radius: 5px;
+    border-radius: var(--THE-ONE-BORDER-RADIUS);
     cursor: pointer;
     transition: all 0.4s ease 0s;
 }
@@ -569,7 +571,7 @@ body{
         width: 0%;
     }
     to{
-        width: 80%;
+        width: 90%;
     }
 }
 @keyframes Progress-animation-JAVASCRIPT {
