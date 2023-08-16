@@ -386,7 +386,7 @@ body{
 }
 .actual__progress::before{
     position: relative;
-    top: -4.4px;
+    top: -4.6px;
     display: inline-block;
     content: '';
     height: 10px;
