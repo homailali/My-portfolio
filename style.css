@@ -378,6 +378,7 @@ body{
 }
 .actual__progress{
     height: 10px;
+    overflow: hidden;
     border-radius: var(--THE-ONE-BORDER-RADIUS);
     background-color: var(--ACTUAL-PROGRESS_BGCOLOR);
 }
@@ -386,10 +387,10 @@ body{
 }
 .actual__progress::before{
     position: relative;
-    top: -4.3px;
+    top: -4.5px;
     display: inline-block;
     content: '';
-    height: 10px;
+    height: 9.9px;
     background-color: var(--H4-COLOR);
     border-radius: var(--THE-ONE-BORDER-RADIUS);
  
