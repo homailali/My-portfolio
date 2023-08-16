@@ -530,7 +530,11 @@ body{
     display: block;
     text-align: center;
 }
-
+.article5__ul{
+    margin:var(--TOP-AND-BOTTOM-MARGINS-FOR-PARAGRAPHS-HEADING-ETC);
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 

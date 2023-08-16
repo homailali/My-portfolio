@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b7e1145916.js" crossorigin="anonymous"></script>
     <title>|| Portfolio</title>
 </head>
 <body>
@@ -199,19 +200,21 @@
             <h2 class="article5__h2">
                 Get In Touch
             </h2>
-            <p class="article5__Name-Email__input">
-                <input type="text" name="Name" placeholder="Name" >
-                <input type="email" name="Email" placeholder="Email">
-            </p>
-            <!-- <p class="article5__text__input">
-                <input type="text" name="Subject" placeholder="Subject">
-            </p> -->
-            <p class="article5__textarea">
-                <textarea name="Message" placeholder="Message"   rows="8"></textarea>
-            </p>
-            <p class="article5__button">
-                <button>Send Message</button>
-            </p>
+            <form id="myForm" action="https://formsubmit.co/f607bb224d0ec97c38cec2e38a75888d" method="POST">
+                <p>
+                    <input type="hidden" name="_next" value="https://homailali.github.io/Real__portfolio/thanks.html">
+                </p>
+                <p class="article5__Name-Email__input">
+                    <input type="text" name="Name" placeholder="Name" >
+                    <input type="email" name="Email" placeholder="Email">
+                </p>
+                <p class="article5__textarea">
+                    <textarea name="Message" placeholder="Message"   rows="8"></textarea>
+                </p>
+                <p class="article5__button">
+                    <button>Send Message</button>
+                </p>
+           </form>
        </section>
        <section class="article5__contact__information">
             <div class="article5__phone">
@@ -239,7 +242,12 @@
                 <div></div>
                 <div>
                         <h5>Social Media</h5>
-                        <p><a href=""></a></p>
+                        <ul class="article5__ul">
+                            <li><a href="https://twitter.com/html5Coding1?t=cJN9zKFvtHO1ZUwXfrYcxw&s=09">Twitter</a></li>
+                            <li><a href="https://wa.me/+923105313124">Whatsapp</a></li>
+                            <li><a href="https://www.reddit.com/user/Beautiful_Extent851">Reddit</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCmfr-vFIxlkE9TsiAKPSkmw">Youtube</a></li>
+                        </ul>
                 </div>
             </div>
        </section>
