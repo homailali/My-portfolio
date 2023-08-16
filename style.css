@@ -534,6 +534,8 @@ body{
     margin:var(--TOP-AND-BOTTOM-MARGINS-FOR-PARAGRAPHS-HEADING-ETC);
     display: flex;
     justify-content: space-evenly;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 
