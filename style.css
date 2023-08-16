@@ -623,8 +623,8 @@ html{
     0%{
         transform: scaleY(0);
     }
-    80%{
-        transform: scaleY(1.2);
+    50%{
+        transform: scaleY(1.1);
     }
     100%{
         transform: scaleY(1);
@@ -635,7 +635,7 @@ html{
         transform: scaleY(1);
     }
     20%{
-        transform: scaleY(1.2);
+        transform: scaleY(1.1);
     }
     100%{
         transform: scaleY(0);
