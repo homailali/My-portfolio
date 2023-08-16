@@ -52,7 +52,7 @@ img{
     --LI-MOBILE-LAST-CHILD-MARGIN:0rem 0.5rem 0.5rem 0.5rem;
     --article3--textarea-MARGIN-TOP:1rem;
     --PROGRESS-MARGIN-TOP:0.7rem;
-    --TOP-AND-BOTTOM-MARGINS-FORCONTAINERS:3rem 0rem 5rem 0rem;
+    --TOP-AND-BOTTOM-MARGINS-FORCONTAINERS:2rem 0rem 5rem 0rem;
     --THE-ONE-LARGE-MARGIN:0rem 1rem;
     --TOP-AND-BOTTOM-MARGINS-FOR-PARAGRAPHS-HEADING-ETC:0.5rem 0rem;
     --BOTTOM-MARGINS-FOR--H4-HEADING:-0.5rem;
@@ -450,9 +450,10 @@ body{
     color:var(--WHITECOLOR);
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.4s ease 0s;
 }
  .article4__button:hover{
-    background: none;
+    background: var(--BUTTON-COLORS);
  }
 
 
