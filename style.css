@@ -59,6 +59,7 @@ img{
     --TOP-AND-BOTTOM-MARGINS-FOR-PARAGRAPHS-HEADING-ETC:0.5rem 0rem;
     --BOTTOM-MARGINS-FOR--H4-HEADING:-0.5rem;
     --TOP-AND-BOTTOM-MARGINS-FOR-BUTTONS:1rem 0rem;
+    --LASTCONTAINER-MARGIN:2rem;
     /* PADDINGS */
     --PADDINGS-FOR-PARAGRAPHS-HEADING-ETC:1rem 0rem;
     --TOP-AND-BOTTOM-PADDING-FOR-THE-HEADER:1rem 0rem;
@@ -462,12 +463,13 @@ html{
  }
 /* || ARTICLE 5 */
 .main__article5{
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
     gap: 1rem;
     margin: var(--TOP-AND-BOTTOM-MARGINS-FORCONTAINERS);
+    margin-bottom: var(--LASTCONTAINER-MARGIN);
 }
 .article5__contact__information{
     margin: var(--TOP-AND-BOTTOM-MARGINS-FORCONTAINERS);
