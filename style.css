@@ -157,6 +157,7 @@ body{
 .header{
     margin: var(--THE-ONE-LARGE-MARGIN);
     padding: var(--TOP-AND-BOTTOM-PADDING-FOR-THE-HEADER);
+
 }
 .header__h4{
     white-space: nowrap;
@@ -387,10 +388,10 @@ body{
 }
 .actual__progress::before{
     position: relative;
-    top: -4.5px;
+    top: -4.6px;
     display: inline-block;
     content: '';
-    height: 9.9px;
+    height: 10px;
     background-color: var(--H4-COLOR);
     border-radius: var(--THE-ONE-BORDER-RADIUS);
  
