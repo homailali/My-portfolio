@@ -59,7 +59,7 @@ img{
     --TOP-AND-BOTTOM-MARGINS-FOR-PARAGRAPHS-HEADING-ETC:0.5rem 0rem;
     --BOTTOM-MARGINS-FOR--H4-HEADING:-0.5rem;
     --TOP-AND-BOTTOM-MARGINS-FOR-BUTTONS:1rem 0rem;
-    --LASTCONTAINER-MARGIN:2rem;
+    --LASTCONTAINER-MARGIN:1rem;
     /* PADDINGS */
     --PADDINGS-FOR-PARAGRAPHS-HEADING-ETC:1rem 0rem;
     --TOP-AND-BOTTOM-PADDING-FOR-THE-HEADER:1rem 0rem;
@@ -463,7 +463,7 @@ html{
  }
 /* || ARTICLE 5 */
 .main__article5{
-   
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -472,7 +472,7 @@ html{
     margin-bottom: var(--LASTCONTAINER-MARGIN);
 }
 .article5__contact__information{
-    margin: var(--TOP-AND-BOTTOM-MARGINS-FORCONTAINERS);
+    margin: var(--TOP-AND-BOTTOM-MARGINS-FORCONTAINERS) 0rem 0rem 0rem;
 }
 .main__article5 input{
     font-size: 1.1rem;
