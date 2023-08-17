@@ -463,7 +463,7 @@ html{
  }
 /* || ARTICLE 5 */
 .main__article5{
-    align-items: center;
+  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -584,6 +584,7 @@ html{
    }
    /* ARTICLE5 */
    .main__article5{
+    align-items: center;
     flex-direction: row;
     gap: 5rem;
    }
