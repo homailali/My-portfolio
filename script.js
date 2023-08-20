@@ -10,3 +10,4 @@ document.getElementById("article4__btn2").addEventListener("click",function(){
     const linkurl='https://homailali.github.io/fiver/';
     window.open(linkurl);
 })
+window.alert("Hello World")
