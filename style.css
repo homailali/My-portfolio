@@ -267,7 +267,6 @@ html{
 }
 .header__section:focus-within .header__menu::before{
     transform: rotate(45deg) translate(-5.2px,-8px);
-
 }
 .header__section:focus-within .header__menu::after{
     transform: rotate(-45deg) translate(20px,-16px);
@@ -613,13 +612,6 @@ html{
 
 
 
-
-
-
-
-
-
-
 /* || ANIMATIONS */
 @keyframes navanimation {
     0%{
@@ -667,6 +659,3 @@ html{
         width: 50%;
     }
 }
-
-
-
