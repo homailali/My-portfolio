@@ -5,7 +5,7 @@ button.addEventListener("click", function() {
 
 var button = document.getElementById("article4__btn2");
 button.addEventListener("click", function() {
-    window.open("https://homailali.github.io/fiver/", "_blank");
+    window.open("https://homailali.github.io/Ecommerce-Store/", "_blank");
 });
 var button = document.getElementById("article1__button");
 button.addEventListener("click", function() {
