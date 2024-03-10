@@ -229,9 +229,14 @@ html{
     background-color: var(--EMAIL-BG-COLOR);
     margin: var(--LI-MOBILE-LAST-CHILD-MARGIN);
     border-radius: var(--THE-ONE-BORDER-RADIUS);
+    padding: 0;
 }
 .header__li:last-child a{
+   display: inline-block;
    color: var(--WHITECOLOR);
+   width: 100%;
+   padding:1.1rem 0rem;
+   border-radius: var(--THE-ONE-BORDER-RADIUS);
 }
 .header__li:last-child:hover{
    background-color: var(--HOVER--COLOR1);
