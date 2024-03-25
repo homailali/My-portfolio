@@ -341,7 +341,7 @@ html{
 }
 .myCompetencies ul{
     position: absolute;
-    left: 8px;
+    left: 5px;
     bottom: 0;
     animation: slide 12s steps(4)  infinite;
     z-index: -1;
