@@ -330,6 +330,43 @@ html{
     gap: 1rem;
     margin: var(--TOP-AND-BOTTOM-MARGINS-FORCONTAINERS);
 }
+
+.article1__h1{
+    overflow: hidden;
+}
+.myCompetencies {
+    color: #2667DD;
+    position: relative;
+    background-color: red;
+}
+.myCompetencies ul{
+    position: absolute;
+    left: 14px;
+    bottom: 0;
+    animation: slide 12s steps(4)  infinite;
+}
+.myCompetencies ul li{
+    position: relative;
+    font-size: var(--H1-FONTSIZE);
+    color: #2667DD;
+    padding: 5px 2px;
+}
+.myCompetencies ul li::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    animation: textAnimation 3s steps(9)   infinite , blink .4s step-end alternate infinite ;
+    border-left: 6px solid #2667DD;
+    border-radius: 1px;
+    z-index: 1;
+}
+
+
 /* || ARTICLE2 */
 .main__article2{
     display: flex;
@@ -605,6 +642,13 @@ html{
     .header__section2{
         display: flex;
     }
+    
+   
+}
+@media screen and (max-width: 500px){
+    .nowrap ul{
+        animation: slide2 12s steps(4)  infinite;
+    }
 }
 /* || LARGEST SCREENS MEDIA QUERY */
 @media (min-width:1400px){
@@ -664,3 +708,41 @@ html{
         width: 50%;
     }
 }
+@keyframes textAnimation {
+    0% {
+        width: 100%
+    }
+
+    10%{
+        width: 100%;
+    }
+
+    70% {
+        width: 0%;
+    }
+
+    100%{
+        width: 0%;
+    }
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes slide {
+
+    100%{
+        bottom: -390%;
+    }
+}
+
+@keyframes  slide2 {
+    100%{
+        bottom: -450%;
+    }
+}
+
+
+
+    
