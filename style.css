@@ -341,15 +341,17 @@ html{
 }
 .myCompetencies ul{
     position: absolute;
-    left: 14px;
+    left: 8px;
     bottom: 0;
     animation: slide 12s steps(4)  infinite;
+    z-index: -1;
 }
 .myCompetencies ul li{
     position: relative;
     font-size: var(--H1-FONTSIZE);
     color: #2667DD;
     padding: 5px 2px;
+    width: fit-content;
 }
 .myCompetencies ul li::after{
     content:'';
@@ -358,12 +360,11 @@ html{
     height: 90%;
     background-color: white;
     top: 50%;
-    right: 0;
+    right: -10px;
     transform: translateY(-50%);
     animation: textAnimation 3s steps(9)   infinite , blink .4s step-end alternate infinite ;
-    border-left: 6px solid #2667DD;
+    border-left: 3px solid #2667DD;
     border-radius: 1px;
-    z-index: 1;
 }
 
 
@@ -717,7 +718,7 @@ html{
         width: 100%;
     }
 
-    70% {
+    50% {
         width: 0%;
     }
 
@@ -733,13 +734,13 @@ html{
 @keyframes slide {
 
     100%{
-        bottom: -390%;
+        bottom: -393%;
     }
 }
 
 @keyframes  slide2 {
     100%{
-        bottom: -450%;
+        bottom: -440%;
     }
 }
 
